@@ -14,5 +14,9 @@ services:
     container_name: azure-vote-front
     environment:
       REDIS: azure-vote-back
+    volumes:
+        - /var/jenkins_home
+        - unix:/var/run/docker.sock
     ports:
         - "8080:80"
+    
