@@ -9,7 +9,7 @@ pipeline{
         }
         stage('Docker Build'){
             steps{
-                sh(script: 'docker componse build')
+                sh(script: 'docker compose build')
             }
         }
         stage('Start App'){
